@@ -1,7 +1,7 @@
 # PlayerBackpackSavesWeaponsWithAttachments
 
-This fixes weapons saving their attachments inside player worn backpacks
-After relogging with the weapons in the backpack, everything is still there. 
+This fixes weapons saving their attachments inside player worn backpacks.
+After relogging with fully kitted weapons in the backpack (Scopes etc), everything is still there. 
 
 I marked the single line code changes with "// Change here" in both files.
 
