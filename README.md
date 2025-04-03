@@ -12,7 +12,7 @@ Test it before you apply it to a live server and make backups! Imho a change bes
 
 ![20760B~1](https://github.com/user-attachments/assets/74547654-17a9-451b-b854-0e0945101aa2)
 
-#> Installation
+# Installation
 
 1. Replace both files into ``@ExileServer\addons\exile_server\code`` and repack your exile_server.pbo
 
