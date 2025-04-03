@@ -252,7 +252,4 @@ if (getNumber(missionConfigFile >> "CfgSimulation" >> "enableDynamicSimulation")
 ] 
 call ExileServer_system_network_send_to;
 [_sessionID, _player] call ExileServer_system_session_update;
-// RW_MineHandler Start - Assigns the existing mines to the player
-[_playerUID,_player] call ExileServer_object_mine_AssignPlayerMines;
-// RW_MineHandler End
 true
