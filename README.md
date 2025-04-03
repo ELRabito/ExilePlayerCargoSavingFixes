@@ -1,6 +1,6 @@
-# PlayerBackpackSavesWeaponsWithAttachments
+# ExilePlayerCargoWeaponsWithAttachmentsSaving
 
-This fixes weapons saving their attachments inside player worn backpacks/uniform/vest.
+This fixes weapons saving their attachments inside player worn backpacks/uniform/vests.
 After relogging with fully kitted weapons stored inside player gear, the attachments are still attached to weapon instead of vanishing.
 
 I marked the single line code changes with "// Change here" in both files. (There are multiple in each, just search for: Change here)
