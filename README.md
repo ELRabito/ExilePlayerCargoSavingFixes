@@ -11,3 +11,7 @@ Test it before you apply it to a live server and make backups! Imho a change bes
 **Warning 2: This fix replaces my old fix!** If you have that installed you can revert it!: https://github.com/ELRabito/Exile-Weapon-Cargo-Attachment-Saving.
 
 ![20760B~1](https://github.com/user-attachments/assets/74547654-17a9-451b-b854-0e0945101aa2)
+
+1. Put/replace both files into ``@ExileServer\addons\exile_server\code`` and repack your exile_server.pbo
+
+3. Done ! Nothing more needed.
