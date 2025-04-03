@@ -46,11 +46,11 @@ _data =
 	uniform _player,
 	(getItemCargo uniformContainer _player) call ExileClient_util_cargo_getMap,
 	(uniformContainer _player) call ExileClient_util_cargo_getMagazineMap,
-	(getWeaponCargo uniformContainer _player) call ExileClient_util_cargo_getMap,
+	weaponsItemsCargo uniformContainer _player,
 	vest _player,
 	(getItemCargo vestContainer _player) call ExileClient_util_cargo_getMap,
 	(vestContainer _player) call ExileClient_util_cargo_getMagazineMap,
-	(getWeaponCargo vestContainer _player) call ExileClient_util_cargo_getMap,
+	weaponsItemsCargo vestContainer _player,
 	_player getVariable ["ExileTemperature", 0],
 	_player getVariable ["ExileWetness", 0],
 	_playerID
