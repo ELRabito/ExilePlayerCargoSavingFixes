@@ -13,7 +13,7 @@ Test it before you apply it to a live server and make backups! Imho a change bes
 
 1. You can do the changes manually, I marked all the single line code changes inside the two functions with "// Change here" (There are multiple in each, just search for: Change here)
 2. Or if you use extDB3 and didn't do any changes to these two functions, you can just replace both files into ``@ExileServer\addons\exile_server\code`` and repack your exile_server.pbo or add them as CfgExileCustomCode to your mission.
-3. Edit the [loadPlayer] SQL query inside exile.ini (extDB3 Example)
+3. Edit the [loadPlayer] SQL query inside ``@ExileServer\sql_custom\exile.ini`` (extDB3 Example)
 
   From (extDB3 default)
   
