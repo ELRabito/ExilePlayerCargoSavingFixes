@@ -171,10 +171,14 @@ if((_backpack select 0) != "") then
 _uniformContainer = uniformContainer _player;
 if !(isNil "_uniformContainer") then
 {
+	// Change here 
 	{ 
-		_uniformContainer addWeaponWithAttachmentsCargoGlobal [_x,1]; // Change here 
+		_x params ["_weapon",["_muzzle",""],["_flashlight",""],["_optics",""],["_primaryMuzzle",[]],["_secondaryMuzzle",[]],["_bipod",""]]; 
+		if(typeName _muzzle == "SCALAR") then {_muzzle = ""};
+		_uniformContainer addWeaponWithAttachmentsCargoGlobal [[_weapon,_muzzle,_flashlight,_optics,_primaryMuzzle,_secondaryMuzzle,_bipod],1];
 	} 
 	forEach (_data select 33);
+	//
 	{ 
 		_uniformContainer addMagazineAmmoCargo [_x select 0, 1, _x select 1]; 
 	} 
@@ -187,10 +191,14 @@ if !(isNil "_uniformContainer") then
 _vestContainer = vestContainer _player;
 if !(isNil "_vestContainer") then
 {
+	// Change here 
 	{ 
-		_vestContainer addWeaponWithAttachmentsCargoGlobal [_x,1]; // Change here
+		_x params ["_weapon",["_muzzle",""],["_flashlight",""],["_optics",""],["_primaryMuzzle",[]],["_secondaryMuzzle",[]],["_bipod",""]]; 
+		if(typeName _muzzle == "SCALAR") then {_muzzle = ""};
+		_vestContainer addWeaponWithAttachmentsCargoGlobal [[_weapon,_muzzle,_flashlight,_optics,_primaryMuzzle,_secondaryMuzzle,_bipod],1]; 
 	} 
 	forEach (_data select 37);
+	//
 	{ 
 		_vestContainer addMagazineAmmoCargo [_x select 0, 1, _x select 1]; 
 	} 
@@ -203,10 +211,14 @@ if !(isNil "_vestContainer") then
 _backpackContainer = backpackContainer _player;
 if !(isNil "_backpackContainer") then
 {
+	// Change here 
 	{  
-		_backpackContainer addWeaponWithAttachmentsCargoGlobal [_x,1]; // Change here
+		_x params ["_weapon",["_muzzle",""],["_flashlight",""],["_optics",""],["_primaryMuzzle",[]],["_secondaryMuzzle",[]],["_bipod",""]]; 
+		if(typeName _muzzle == "SCALAR") then {_muzzle = ""};
+		_backpackContainer addWeaponWithAttachmentsCargoGlobal [[_weapon,_muzzle,_flashlight,_optics,_primaryMuzzle,_secondaryMuzzle,_bipod],1];
 	} 
 	forEach (_data select 18);
+	//
 	{ 
 		_backpackContainer addMagazineAmmoCargo [_x select 0, 1, _x select 1]; 
 	} 
@@ -255,4 +267,5 @@ if (getNumber(missionConfigFile >> "CfgSimulation" >> "enableDynamicSimulation")
 ] 
 call ExileServer_system_network_send_to;
 [_sessionID, _player] call ExileServer_system_session_update;
+[_playerUID,_player] call ExileServer_object_mine_AssignPlayerMines;
 true
