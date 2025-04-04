@@ -25,7 +25,7 @@ This fixes weapons saving their attachments inside player worn backpacks/uniform
 
         alter table player modify column backpack text;
   
-- Or with HeidiSQL etc. 
+- Or with HeidiSQL (https://www.heidisql.com/) etc. 
  
   ![grafik](https://github.com/user-attachments/assets/090038ea-b140-408f-b0e9-aa1390014bbc)
 
