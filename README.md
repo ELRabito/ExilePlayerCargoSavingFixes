@@ -24,7 +24,7 @@ This fixes weapons saving their attachments inside player worn backpacks/uniform
   - This can be easily done with HeidiSQL 
   ![grafik](https://github.com/user-attachments/assets/090038ea-b140-408f-b0e9-aa1390014bbc)
 
-5. Run this SQL querie to update the backPack column.
+5. Run this SQL querie to update the backPack column to the new data format.
 
       UPDATE player
       SET backpack = JSON_ARRAY(
@@ -33,4 +33,4 @@ This fixes weapons saving their attachments inside player worn backpacks/uniform
       )
       WHERE backpack IS NOT NULL;
 
-5. Done ! Nothing more needed.
+6. Done ! Nothing more needed.
