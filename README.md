@@ -25,12 +25,12 @@ This fixes weapons saving their attachments inside player worn backpacks/uniform
   ![grafik](https://github.com/user-attachments/assets/090038ea-b140-408f-b0e9-aa1390014bbc)
 
 5. Run this SQL querie to update the backPack column.
-    -- Fix backpack column
-    UPDATE player
-    SET backpack = JSON_ARRAY(
-      TRIM(BOTH '"' FROM backpack),
-      JSON_ARRAY()
-    )
-    WHERE backpack IS NOT NULL;
+
+      UPDATE player
+      SET backpack = JSON_ARRAY(
+        TRIM(BOTH '"' FROM backpack),
+        JSON_ARRAY()
+      )
+      WHERE backpack IS NOT NULL;
 
 5. Done ! Nothing more needed.
