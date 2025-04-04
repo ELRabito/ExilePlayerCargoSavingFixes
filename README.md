@@ -21,11 +21,12 @@ This fixes weapons saving their attachments inside player worn backpacks/uniform
     OUTPUT = 1,2-STRING,3-STRING,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20-STRING,21-STRING,22,23-STRING,24-STRING,25-STRING,26,27-STRING,28,29-STRING,30,31-STRING,32,33,34,35-STRING,36,37,38,39,40,41,42,43,44-STRING,45,46,47
 
 4. Change the datatype for the backpack field in the player table from VARCHAR to TEXT inside your SQL database.
-  - This can be easily done with HeidiSQL 
-  - Or by running this SQL query
+ - This can be done by running this SQL query
 
         alter table player modify column backpack text;
-
+  
+- Or with HeidiSQL etc. 
+ 
   ![grafik](https://github.com/user-attachments/assets/090038ea-b140-408f-b0e9-aa1390014bbc)
 
 5. Run the SQL query (Depending on your MsSQL server version) from ExilePlayerCargoSaving_SQL_Fixes.sql to update the backpack column to the new data format.
