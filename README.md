@@ -26,7 +26,7 @@ Test it before you apply it to a live server and make backups! Imho a change bes
   
     OUTPUT = 1,2-STRING,3-STRING,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20-STRING,21-STRING,22,23-STRING,24-STRING,25-STRING,26,27-STRING,28,29-STRING,30,31-STRING,32,33,34,35-STRING,36,37,38,39,40,41,42,43,44-STRING,45,46,47
 
-4. Change the datatype for the backpack field in the player table froM VARCHAR to Text inside your SQL database.
+4. Change the datatype for the backpack field in the player table from VARCHAR to TEXT inside your SQL database.
   - This can be easily done with HeidiSQL 
   ![grafik](https://github.com/user-attachments/assets/090038ea-b140-408f-b0e9-aa1390014bbc)
 
