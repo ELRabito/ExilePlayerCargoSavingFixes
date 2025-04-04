@@ -22,7 +22,7 @@ This fixes weapons saving their attachments inside player worn backpacks/uniform
 
 4. Change the datatype for the backpack field in the player table from VARCHAR to TEXT inside your SQL database.
   - This can be easily done with HeidiSQL 
-  - Or by running this query
+  - Or by running this SQL query
 
         alter table player modify column backpack text;
 
