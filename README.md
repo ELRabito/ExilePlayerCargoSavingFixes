@@ -24,6 +24,6 @@ This fixes weapons saving their attachments inside player worn backpacks/uniform
   - This can be easily done with HeidiSQL 
   ![grafik](https://github.com/user-attachments/assets/090038ea-b140-408f-b0e9-aa1390014bbc)
 
-5. Run the SQL query from ExilePlayerCargoSaving_SQL_Fixes.sql to update the backpack column to the new data format.
+5. Run the SQL query (Depending on your MsSQL server version) from ExilePlayerCargoSaving_SQL_Fixes.sql to update the backpack column to the new data format.
 
 6. Done ! Nothing more needed.
