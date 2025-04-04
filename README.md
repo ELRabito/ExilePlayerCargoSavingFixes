@@ -6,8 +6,8 @@ This fixes weapons saving their attachments inside player worn backpacks/uniform
 1. Since there could be issues while loading players, test it before you apply it to a live server and make backups!
 
 2. This fix replaces my old fix - Exile-Weapon-Cargo-Attachment-Saving!
-  - If you have that installed you can revert it
-  - https://github.com/ELRabito/Exile-Weapon-Cargo-Attachment-Saving.
+  - If you have that installed you can revert it.
+  - https://github.com/ELRabito/Exile-Weapon-Cargo-Attachment-Saving
 
 
 # Installation
@@ -26,14 +26,15 @@ This fixes weapons saving their attachments inside player worn backpacks/uniform
 
 
 4. Change the datatype for the backpack field in the player table from VARCHAR to TEXT inside your SQL database.
- - This can be done by running this SQL query
+ - This can be done by running this SQL query.
 
         alter table player modify column backpack text;
   
-- Or with HeidiSQL (https://www.heidisql.com/) etc (You can also just run the query there).
+- Or with HeidiSQL (https://www.heidisql.com/) etc.
+- You can also just run the query there.
  
   ![grafik](https://github.com/user-attachments/assets/090038ea-b140-408f-b0e9-aa1390014bbc)
 
 5. Run the SQL query (Depending on your MsSQL server version) from ExilePlayerCargoSaving_SQL_Fixes.sql to update the backpack column to the new data format.
 
-6. Done ! Nothing more needed.
+6. Done! Nothing more needed.
