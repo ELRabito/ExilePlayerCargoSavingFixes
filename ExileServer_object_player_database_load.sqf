@@ -161,15 +161,18 @@ if (_vest != "") then
 {
 	_player addVest _vest;
 };
-if (_backpack != "") then
+// Change here (Covers player worn backpack and backpacks inside)
+if((_backpack select 0) != "") then
 {
-	_player addBackpackGlobal _backpack;
+	_player addBackpackGlobal (_backpack select 0);
+	{(backpackContainer _player) addBackpackCargoGlobal [_x,1]} forEach (_backpack select 1);
 };
+//
 _uniformContainer = uniformContainer _player;
 if !(isNil "_uniformContainer") then
 {
 	{ 
-		_uniformContainer addWeaponWithAttachmentsCargoGlobal [_x,1];  // Change here
+		_uniformContainer addWeaponWithAttachmentsCargoGlobal [_x,1]; // Change here 
 	} 
 	forEach (_data select 33);
 	{ 
@@ -185,7 +188,7 @@ _vestContainer = vestContainer _player;
 if !(isNil "_vestContainer") then
 {
 	{ 
-		_vestContainer addWeaponWithAttachmentsCargoGlobal [_x,1]; // Change here 
+		_vestContainer addWeaponWithAttachmentsCargoGlobal [_x,1]; // Change here
 	} 
 	forEach (_data select 37);
 	{ 
@@ -200,7 +203,7 @@ if !(isNil "_vestContainer") then
 _backpackContainer = backpackContainer _player;
 if !(isNil "_backpackContainer") then
 {
-	{ 
+	{  
 		_backpackContainer addWeaponWithAttachmentsCargoGlobal [_x,1]; // Change here
 	} 
 	forEach (_data select 18);
