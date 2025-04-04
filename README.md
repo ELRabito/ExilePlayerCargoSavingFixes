@@ -4,7 +4,8 @@ This fixes weapons saving their attachments inside player worn backpacks/uniform
 
 # Warnings 
 1. Since there could be issues while loading players, test it before you apply it to a live server and make backups!
-2. This fix replaces my old fix!** If you have that installed you can revert it!: https://github.com/ELRabito/Exile-Weapon-Cargo-Attachment-Saving.
+2. This fix replaces my old fix!
+  - If you have that installed you can revert it!: https://github.com/ELRabito/Exile-Weapon-Cargo-Attachment-Saving.
 
 # Installation
 
