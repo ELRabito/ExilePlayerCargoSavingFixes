@@ -28,7 +28,7 @@ _data =
 	_playerPos select 1,
 	_playerPos select 2,
 	assignedItems _player,
-	backpack _player,
+	[backpack _player,backpackcargo (backpackcontainer _player)], // Change here
 	(getItemCargo backpackContainer _player) call ExileClient_util_cargo_getMap,
 	(backpackContainer _player) call ExileClient_util_cargo_getMagazineMap,
 	weaponsItemsCargo backpackContainer _player, // Change here
