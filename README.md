@@ -3,8 +3,7 @@
 This fixes weapons saving their attachments inside player worn backpacks/uniform/vests, and saving of backpacks stored inside player worn backpacks on logout (By default both vanish on relog). 
 
 # Warnings 
-1. Since the data structure changes i advise to either clear the player table in the database or wait for a wipe as there could be issues while loading players.
-Test it before you apply it to a live server and make backups! Imho a change best situated for a wipe!
+1. Since there could be issues while loading players, test it before you apply it to a live server and make backups!
 2. This fix replaces my old fix!** If you have that installed you can revert it!: https://github.com/ELRabito/Exile-Weapon-Cargo-Attachment-Saving.
 
 # Installation
